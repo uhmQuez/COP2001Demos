@@ -1,0 +1,86 @@
+//
+//  main.cpp
+//  VirtualDay4
+//
+//  Created by Christian Vazquez on 6/3/17.
+//  Copyright © 2017 Christian Vazquez. All rights reserved.
+//
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int top = -1, myArray[5];
+
+void Push(int value)
+{
+    if (top == 4)
+    {
+        cout << "\n Stack is full! \n";
+    }
+    else
+    {
+        top++;
+        myArray[top] = value;
+    }
+}
+
+void Pop()
+{
+    if (top == -1)
+    {
+        cout << "\n Stack is empty! \n";
+    }
+    else
+    {
+        top--;
+    }
+}
+
+void Display()
+{
+    if (top == -1)
+    {
+        cout << "\n Nothing to display! \n";
+    }
+    else
+    {
+        cout << "The array contains the following numbers: ";
+        for(int i = 0; i <= top; i++)
+        {
+            cout << "\t" << myArray[i];
+        }
+        cout << "\n";
+    }
+}
+
+int main(int argc, const char * argv[]) {
+
+    int value, option;
+
+    do
+    {
+        cout << "1. PUSH \n 2. POP \n 3. DISPLAY \n 4. EXIT PROGRAM \n Input Option: ";
+        cin >> option;
+
+
+        if (option == 1)
+        {
+            cout << "Enter value: ";
+            cin >> value;
+            Push(value);
+        }
+        if (option == 2)
+        {
+            Pop();
+        }
+        if (option == 3)
+        {
+            Display();
+        }
+    } while (option != 4);
+
+    cout << "\n\n Exiting program... \n";
+    return 0;
+}

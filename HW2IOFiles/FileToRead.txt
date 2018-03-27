@@ -1,0 +1,15 @@
+Hello! This is
+a file that contains
+a total of
+15 lines!
+Yes, you heard me correctly...
+FIFTEEN TOTAL LINES
+This is line number 7
+and this is line 8.
+Guess what number line this is?
+That last line was 9 and this one is 10.
+Now I'm at 11.
+Hopefully I can make it to 15.
+But I don't know
+Oh sweet!
+THIS IS LINE 15.

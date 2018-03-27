@@ -1,0 +1,10 @@
+Hello, I'm a file with 10 lines.
+I know
+exactly what you
+are thinking...
+"How will Chris ever get this
+program to
+work for him?"
+....
+Well honestly, I really
+REALLY don't know.
